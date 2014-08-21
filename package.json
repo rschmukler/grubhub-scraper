@@ -1,5 +1,5 @@
 {
-  "name": "grubhub-scraper",
+  "name": "grubhub-api",
   "version": "0.0.1",
   "description": "Scraper for finding the grub",
   "main": "index.js",

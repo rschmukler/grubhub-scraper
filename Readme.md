@@ -5,6 +5,14 @@ The api you wish grubhub had...
 
 Full documentation coming soon
 
+## Install
+
+Install with npm:
+
+```
+npm install grubhub-api
+```
+
 ## Example
 
 ```js
