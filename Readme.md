@@ -16,9 +16,17 @@ npm install grubhub-api
 ## Example
 
 ```js
-Search = require('grubhub-api').Search;
+var Search = require('grubhub-api').Search;
+
 var search = new Search('1234 Blueberry Hill, Ny');
+
 search.run({perPage: 15, page: 1}, function(err, results) {
+  results.forEach(function(restaurant) {
+    console.log(
+      "Restaurant %s is %d miles away, has a rating of %d",
+      restaurant.name, restaurant.distance, restaurant.grubhubRating
+    );
+  });
 });
 ```
 
