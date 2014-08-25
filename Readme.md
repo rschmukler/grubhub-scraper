@@ -3,8 +3,6 @@
 The api you wish grubhub had...
 
 
-Full documentation coming soon
-
 ## Install
 
 Install with npm:
