@@ -58,3 +58,33 @@ A search will include restauraunt objects in an array. The object is as follows:
   - `DISTANCE` - can you guess?
 
 - cuisine: include the cusines you want, currently not supported, but planned
+
+## Configuring a Search
+
+### location(String)
+
+Sets the location
+
+```js
+var Search = new Search();
+Search.location('1234 Blueberry Hill');
+```
+
+### onlyOpen(Boolean)
+
+Sets whether to only search for open locations. `true` by default.
+
+```js
+var Search = new Search();
+Search.onlyOpen(true);
+```
+
+### autolocate(Boolean)
+
+Sets whether or not to auto-select when a location search returns multiple results.
+Defaults to `true`. If `false`, search will throw an error if location returns multiple results.
+
+```js
+var Search = new Search();
+Search.autolocate(false);
+```
